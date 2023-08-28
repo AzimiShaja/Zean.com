@@ -11,7 +11,7 @@ function lazyWithTimeout(importFunction) {
   );
 }
 
-const LazyIndexPage = lazyWithTimeout(() => import("./Pages/IndexPage"));
+const LazyIndexPage = lazyWithTimeout(() => import("/src/pages/IndexPage"));
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
