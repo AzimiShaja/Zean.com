@@ -15,7 +15,7 @@ export default function IndexPage() {
   });
 
   return (
-    <div className={`${contentLoaded ? "translate" : "not-translate"}`}>
+    <div className={`${contentLoaded ? "transit" : "not-transit"}`}>
       <Header />
       <Hero />
       <About />

@@ -16,7 +16,13 @@
 }
 .translate {
     @apply opacity-100 duration-1000 ;
-  }
+}
   .not-translate{
     @apply opacity-0 translate-y-full  duration-1000;
-  }
+}
+.transit {
+    @apply opacity-100  duration-300;
+}
+.not-transit {
+    @apply opacity-0 duration-300;
+}
