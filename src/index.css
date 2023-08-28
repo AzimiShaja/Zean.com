@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-page{
+    @apply text-red border-b-2 border-red rounded-sm ;
+}
+.expanded {
+    @apply h-full transition-all ;
+}
+.not-expanded {
+    @apply hidden transition-all ;
+}
+.nav_links a{
+    @apply hover:text-red duration-300 hover:-translate-y-1 font-kanit ;
+}
+.translate {
+    @apply opacity-100 duration-700 ;
+  }
+  .not-translate{
+    @apply opacity-0  duration-700;
+  }
