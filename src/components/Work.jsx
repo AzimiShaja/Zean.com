@@ -1,8 +1,29 @@
 import works from "./Works";
+import { useState, useEffect } from "react";
 export default function Work() {
+  const [transition, setTransition] = useState(false);
+  function hanldeScroll() {
+    let windowScrollTop = window.scrollY;
+    if (windowScrollTop > 1200) {
+      setTransition(true);
+    } else {
+      setTransition(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", hanldeScroll);
+    return () => {
+      window.removeEventListener("scroll", hanldeScroll);
+    };
+  });
   return (
     <>
-      <div className="py-10 flex items-center justify-center">
+      <div
+        className={`${
+          transition ? "translate" : "not-translate"
+        } py-10 flex items-center justify-center`}
+      >
         <div className="lg:w-9/12 flex items-center  flex-col gap-10 py-10 rounded-lg px-10">
           <div className="max-w-fit border-b-4 py-2 border-red rounded-sm">
             <h1 className="text-4xl uppercase font-open font-bold">

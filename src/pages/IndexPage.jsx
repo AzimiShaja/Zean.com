@@ -11,7 +11,7 @@ export default function IndexPage() {
   useEffect(() => {
     setTimeout(() => {
       setContentLoaded(true);
-    }, 300);
+    }, 100);
   });
 
   return (

@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 600);
+    }, 500);
 
     return () => {
       clearTimeout(loadingTimer);
@@ -27,16 +27,10 @@ function App() {
   }, []);
 
   return (
-    <Suspense
-      fallback={
-        <div className="h-screen bg-gray-100 flex justify-center items-center flex-col gap-5">
-          <AiOutlineLoading3Quarters className="animate-spin text-7xl" />
-        </div>
-      }
-    >
+    <Suspense>
       {isLoading ? (
-        <div className="h-screen bg-gray-100 flex justify-center items-center flex-col gap-5">
-          <AiOutlineLoading3Quarters className="animate-spin text-7xl" />
+        <div className="h-screen bg-black flex justify-center items-center flex-col gap-5">
+          <AiOutlineLoading3Quarters className="animate-spin text-7xl text-white" />
         </div>
       ) : (
         <Routes>
