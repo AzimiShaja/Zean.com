@@ -11,7 +11,11 @@ export default function Header() {
     <div className="bg-black text-white flex flex-col ">
       <header className="flex justify-between md:justify-around py-3 max-md:px-5 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-indie">ZEAN</h1>
+          <a href="/">
+            <h1 className="text-4xl md:text-5xl font-indie hover:text-red duration-300">
+              ZEAN
+            </h1>
+          </a>
         </div>
         <div className="nav_links flex gap-4 max-md:hidden">
           <a className="active-page" href="">

@@ -7,6 +7,7 @@ import { AiOutlineMobile } from "react-icons/ai";
 import { useState, useEffect } from "react";
 export default function About() {
   const [transition, setTransition] = useState(false);
+  const [isMouseOver, setIsMouseOver] = useState(false);
   function hanldeScroll() {
     let windowScrollTop = window.scrollY;
     if (windowScrollTop > 300) {
@@ -82,8 +83,8 @@ export default function About() {
                 View all projects
               </button>
             </div>
-            <div className="lg:max-w-sm ">
-              <img className="rounded-lg" src={bg} alt="" />
+            <div className="lg:max-w-sm  ">
+              <img className="rounded-lg" src={bg} />
             </div>
           </div>
           <div className="flex justify-between items-center max-md:flex-col w-full px-10 gap-10 mt-4">
