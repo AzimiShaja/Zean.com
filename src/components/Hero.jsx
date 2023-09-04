@@ -1,4 +1,3 @@
-import img from "/src/assets/hero.png";
 export default function Hero() {
   return (
     <>

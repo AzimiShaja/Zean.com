@@ -16,7 +16,7 @@ export default function IndexPage() {
 
   return (
     <div className={`${contentLoaded ? "transit" : "not-transit"}`}>
-      <Header />
+      <Header navLink={0} />
       <Hero />
       <About />
       <Work />

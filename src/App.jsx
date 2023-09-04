@@ -12,6 +12,7 @@ function lazyWithTimeout(importFunction) {
 }
 
 const LazyIndexPage = lazyWithTimeout(() => import("/src/pages/IndexPage"));
+const LazyAboutPage = lazyWithTimeout(() => import("/src/pages/AboutPage"));
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<LazyIndexPage />} />
+            <Route path="about" element={<LazyAboutPage />} />
           </Route>
         </Routes>
       )}

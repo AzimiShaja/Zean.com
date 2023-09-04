@@ -6,10 +6,16 @@
     @apply text-red border-b-2 border-red rounded-sm ;
 }
 .expanded {
-    @apply h-full transition-all ;
+    @apply absolute w-[200px] left-0 top-16 duration-500 ;
 }
 .not-expanded {
-    @apply hidden transition-all ;
+    @apply  absolute -left-96 top-16 duration-500 ;
+}
+.expanded a {
+    @apply opacity-100 duration-500;
+}
+.not-expanded a {
+    @apply opacity-0 duration-500;
 }
 .nav_links a{
     @apply hover:text-red duration-300 hover:-translate-y-1 font-kanit ;
