@@ -1,4 +1,20 @@
+import { useEffect } from "react";
+import { useState } from "react";
+
 export default function Hero() {
+  const [num, setNum] = useState(0);
+
+  useEffect(() => {
+    // Check if num + 4 would exceed 40
+    if (num === 250) {
+      return;
+    } else {
+      setTimeout(() => {
+        setNum(num + 2);
+      }, 10);
+    }
+  }, [num]);
+
   return (
     <>
       <div className=" flex h-screen justify-evenly max-lg:flex-col items-center py-20  bg-hero bg-center bg-cover ">
@@ -18,7 +34,7 @@ export default function Hero() {
         {/**================== */}
         <div className="flex items-center gap-5 flex-col ">
           <div className="flex border-r-4 rounded-sm px-2 border-red gap-2 text-white items-center justify-center">
-            <h1>440</h1>
+            <h1>{num}</h1>
           </div>
           <h1 className="text-gray-400 text-md">
             More than a hundred success projects

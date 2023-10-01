@@ -29,28 +29,28 @@ export default function Header(props) {
           <a
             className={` ${activeNav === 1 ? "active-page" : ""} `}
             onClick={() => setActiveNav(1)}
-            href="/about"
+            href=""
           >
             ABOUT
           </a>
           <a
             className={` ${activeNav === 2 ? "active-page" : ""} `}
             onClick={() => setActiveNav(2)}
-            href="/work"
+            href=""
           >
             WORK
           </a>
           <a
             className={` ${activeNav === 2 ? "active-page" : ""} `}
             onClick={() => setActiveNav(2)}
-            href="/blog"
+            href=""
           >
             BLOG
           </a>
           <a
             className={` ${activeNav === 3 ? "active-page" : ""} `}
             onClick={() => setActiveNav(3)}
-            href="/contact"
+            href=""
           >
             CONTACT
           </a>
@@ -71,10 +71,10 @@ export default function Header(props) {
         <a className="active-page" href="">
           HOME
         </a>
-        <a href="/about">ABOUT</a>
-        <a href="/contact">WORK</a>
-        <a href="/blog">BLOG</a>
-        <a href="/contact">CONTACT</a>
+        <a href="">ABOUT</a>
+        <a href="">WORK</a>
+        <a href="">BLOG</a>
+        <a href="">CONTACT</a>
       </div>
     </div>
   );
