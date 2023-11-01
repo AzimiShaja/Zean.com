@@ -17,6 +17,7 @@ export default function Work() {
       window.removeEventListener("scroll", hanldeScroll);
     };
   });
+
   return (
     <>
       <div
@@ -39,11 +40,11 @@ export default function Work() {
                   <div className="max-w-sm">
                     <img className="rounded-lg" src={work.work_img} />
                   </div>
-                  <div className="flex flex-col gap-5 items-start max-w-lg">
+                  <div className="flex flex-col gap-5 max-md:gap-10 items-start max-w-lg max-md:items-center">
                     <h1 className="text-3xl font-bold font-open">
                       {work.title}
                     </h1>
-                    <p className="font-light font-roboto ">
+                    <p className="font-light font-roboto max-md:text-center">
                       {work.description}
                     </p>
                     <div className=" flex items-center gap-10">
@@ -59,7 +60,7 @@ export default function Work() {
                         </p>
                       </div>
                     </div>
-                    <button className="py-2 border px-4 rounded-lg border-red font-open hover:bg-red duration-300 hover:text-white">
+                    <button className="py-2 border px-4 rounded-lg border-red font-open hover:bg-red duration-300 hover:text-white max-md:w-full">
                       View portfolio
                     </button>
                   </div>

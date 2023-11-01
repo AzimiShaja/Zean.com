@@ -57,7 +57,7 @@ export default function Header(props) {
         </div>
         <div
           onClick={handleToggle}
-          className="flex items-center gap-1 md:hidden"
+          className="flex items-center gap-1 md:hidden cursor-pointer"
         >
           <h1 className="text-xl">MENU</h1>
           <RxHamburgerMenu className="text-2xl" />

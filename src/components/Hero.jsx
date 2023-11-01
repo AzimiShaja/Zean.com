@@ -5,12 +5,11 @@ export default function Hero() {
   const [num, setNum] = useState(0);
 
   useEffect(() => {
-    // Check if num + 4 would exceed 40
     if (num === 250) {
       return;
     } else {
       setTimeout(() => {
-        setNum(num + 2);
+        setNum(num + 1);
       }, 10);
     }
   }, [num]);

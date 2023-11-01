@@ -12,7 +12,10 @@ export default function Testimonials() {
         <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-10  mt-20">
           {testimonials.map((testimonial) => {
             return (
-              <div className="flex flex-col gap-5  shadow-red shadow-md p-5  bg-white justify-between rounded-b-xl rounded-tr-xl">
+              <div
+                key={testimonial.id}
+                className="flex flex-col gap-5  shadow-red shadow-md p-5  bg-white justify-between rounded-b-xl rounded-tr-xl hover:shadow-red hover:shadow-lg duration-300"
+              >
                 <BsQuote className="text-5xl text-red relative bottom-10" />
                 <p className="font-light font-roboto text-justify">
                   {testimonial.review}

@@ -7,7 +7,7 @@ import { AiOutlineMobile } from "react-icons/ai";
 import { useState, useEffect } from "react";
 export default function About() {
   const [transition, setTransition] = useState(false);
-  const [isMouseOver, setIsMouseOver] = useState(false);
+
   function hanldeScroll() {
     let windowScrollTop = window.scrollY;
     if (windowScrollTop > 300) {
@@ -34,23 +34,23 @@ export default function About() {
             <h1 className="text-4xl uppercase font-open font-bold">About us</h1>
           </div>
           <div className="flex w-full gap-10 max-md:flex-col justify-between lg:justify-between px-10 mt-20">
-            <p className="flex flex-col items-center max-md:text-lg lg:text-xl font-open gap-2 hover:text-red duration-300 cursor-pointer text-center">
+            <p className="flex flex-col items-center max-md:text-lg lg:text-xl font-open gap-2 hover:text-red hover:scale-110 duration-300 cursor-pointer text-center ">
               <MdOutlineDesignServices className="text-5xl" />
               UI/UX Design
             </p>
-            <p className="flex flex-col items-center text-xl font-open gap-2 max-md:text-lg hover:text-red duration-300 cursor-pointer text-center">
+            <p className="flex flex-col items-center text-xl font-open gap-2 max-md:text-lg hover:text-red duration-300 cursor-pointer text-center hover:scale-110">
               <BsCodeSquare className="text-5xl " />
               Web Development
             </p>
-            <p className="gap-2  flex flex-col items-center text-xl font-open max-md:text-lg  hover:text-red duration-300 cursor-pointer text-center">
+            <p className="gap-2  flex flex-col items-center text-xl font-open max-md:text-lg  hover:text-red duration-300 cursor-pointer text-center hover:scale-110">
               <SlLayers className="text-5xl" />
               Product Design
             </p>
-            <p className="gap-2 flex flex-col items-center text-xl font-open max-md:text-lg hover:text-red duration-300 cursor-pointer text-center">
+            <p className="gap-2 flex flex-col items-center text-xl font-open max-md:text-lg hover:text-red duration-300 cursor-pointer text-center hover:scale-110">
               <AiOutlineMobile className="text-5xl" />
               Mobile Apps
             </p>
-            <p className="gap-2 flex flex-col items-center text-xl font-open max-md:text-lg hover:text-red duration-300 cursor-pointer text-center">
+            <p className="gap-2 flex flex-col items-center text-xl font-open max-md:text-lg hover:text-red duration-300 cursor-pointer text-center hover:scale-110">
               <BsSearch className="text-5xl" />
               SEO
             </p>
@@ -58,17 +58,17 @@ export default function About() {
           <div className="flex px-10 gap-4 max-md:flex-col-reverse">
             <div className="flex flex-col gap-3 items-start justify-between">
               <div className="flex flex-col gap-4">
-                <h1 className="text-4xl max-md:text-3xl font-bold font-open">
+                <h1 className="text-4xl max-md:text-3xl font-bold font-open max-md:text-center">
                   Welcome to Zean, A Personal Porfolio Web Agency
                 </h1>
-                <p className="text-md font-light font-roboto text-justify">
+                <p className="text-md font-light font-roboto text-justify max-md:text-center">
                   Separated they live in Bookmarksgrove right at the coast of
                   the Semantics, a large language ocean. A small river named
                   Duden flows by their place and supplies it with the necessary
                   regelialia. It is a paradisematic country, in which roasted
                   parts of sentences fly into your mouth.
                 </p>
-                <p className="text-md font-light font-roboto text-justify">
+                <p className="text-md font-light font-roboto text-justify max-md:text-center">
                   Far far away, behind the word mountains, far from the
                   countries Vokalia and Consonantia, there live the blind texts.
                   Separated they live in Bookmarksgrove right at the coast of
@@ -79,7 +79,7 @@ export default function About() {
                 </p>
               </div>
 
-              <button className="bg-red mt-10 text-white hover:text-black py-2 border border-red rounded-md px-4 text-center font-poppins hover:bg-transparent duration-300">
+              <button className="bg-red mt-10 text-white hover:text-black py-2 border border-red rounded-md px-4 text-center font-poppins hover:bg-transparent duration-300  max-md:w-full">
                 View all projects
               </button>
             </div>
